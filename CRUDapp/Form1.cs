@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace CRUDapp
 {
-    public partial class Form1 : Form
+    public partial class FormLog1 : Form
     {
-        public Form1()
+        public FormLog1()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
