@@ -16,7 +16,8 @@ namespace CRUDapp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLog1());
+            FormLog1 formLog1 = new FormLog1();
+            Application.Run(formLog1);
         }
     }
 }
