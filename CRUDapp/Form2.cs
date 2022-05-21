@@ -46,5 +46,16 @@ namespace CRUDapp
         {
             Download();
         }
+
+        private void editButton_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3(connection);
+            form3.ShowDialog();
+            Download();
+        }
     }
 }

@@ -60,11 +60,13 @@
             this.addButton.TabIndex = 2;
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = false;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // deleteButton
             // 
             this.deleteButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
             this.deleteButton.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.deleteButton.Enabled = false;
             this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.deleteButton.ForeColor = System.Drawing.SystemColors.Control;
@@ -79,6 +81,7 @@
             // 
             this.editButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
             this.editButton.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.editButton.Enabled = false;
             this.editButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.editButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.editButton.ForeColor = System.Drawing.SystemColors.Control;
@@ -88,6 +91,7 @@
             this.editButton.TabIndex = 4;
             this.editButton.Text = "Edit";
             this.editButton.UseVisualStyleBackColor = false;
+            this.editButton.Click += new System.EventHandler(this.editButton_Click);
             // 
             // refreshButton
             // 
@@ -108,7 +112,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(921, 518);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(921, 411);
             this.Controls.Add(this.refreshButton);
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.deleteButton);
@@ -117,6 +122,7 @@
             this.MaximizeBox = false;
             this.Name = "Form2";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EasyCrud";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
